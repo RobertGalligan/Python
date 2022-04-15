@@ -19,3 +19,4 @@ a = "Tree"
 print(a)
 a= 4.4
 a = True
+exit()  # A function
