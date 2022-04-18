@@ -13,6 +13,28 @@ print("---------")
 
 for i in range(1, 20):
     print(i)
-    if i % 7 == 0:
+    if i % 7 == 0:  # This means when i gets to 7 if if % by 7 and ='s 0 so it breaks
         break
-    
+
+# continue
+
+for i in range(1, 20):
+    if i % 3 == 0:  # If i is devisable by 3 and equals 0 i  it will be skipped by the continue
+        continue
+    print(i)
+
+for i in range(1, 20):
+    if i % 2 == 0:  # If i is devisable by 2 and equals 0 i  it will be skipped by the continue
+        continue
+    print(i)
+
+for i in range(1, 20):
+    if i % 2 == 0 and i % 3 == 0:   #If i is devisable by 3 and 2 and equals 0 it will be skipped 
+                                    #by the continue. 
+        continue
+    print(i)
+
+for i in range(1, 20):
+    if i % 2 == 0 or i % 3 == 0:  # If i is devisable by 3 or 2 and equals 0 i it will be skipped by the continue
+        continue
+    print(i)
