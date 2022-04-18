@@ -35,8 +35,9 @@ favourite_food = "bacon"
 
 if favourite_colour == "blue" and favourite_food == "bacon":
     print("Food and colour, what are the odds?")
-if favourite_colour == "blue" and not favourite_food == "bacon":
+elif favourite_colour == "blue" and not favourite_food == "bacon":
     print("That's my favourite too.")
+    
 elif favourite_colour == "green":
     if favourite_food == "bacon":
         print("Favourite food, but not colour that's a shame")
