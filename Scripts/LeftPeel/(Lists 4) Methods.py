@@ -6,6 +6,9 @@
 # ages.extend([])
 # ages.pop() or ages.pop(index)
 # ages.remove(value)
+# ages.count(value)
+# ages.sort()
+# ages.reverse()
 # A list is an object.
 
 #Index   0   1   2   3   4   5   6   7   8   9  
@@ -58,3 +61,26 @@ ages.remove(15)
 print(ages)
 # ages = [14, 14, 10, 11, 12, 12, 15, 16, 18, 17, 15, 19, 15, 16, 17]
 # only the first 15 was removed
+
+# ages.count(value)
+print(ages.count(25))
+print(ages.count(17))
+
+# ages.index()
+print(ages)
+print(ages.index(17))
+# This will tell you where in the index the value is located (index (9)) but only the first one.
+
+print(ages.index(15))       # this will find the first 15
+ages.pop(ages.index(15))    # this will pop out the first 15, changing the list
+print(ages.index(15))       # this will find the second 15
+
+# ages.sort
+# sort the list from lowest to highest
+ages.sort()
+print(ages)
+
+# ages.reverse()
+# sorts the list from highest to lowest
+ages.reverse
+print(ages)
