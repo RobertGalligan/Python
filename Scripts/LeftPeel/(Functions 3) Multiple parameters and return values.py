@@ -68,4 +68,20 @@ def hilo(List_of_nums):
 
 high, low = hilo([5, 3, 1, 2, 3, 5, 10, 15, 20, 25, 0, -16, 10000])
 print(high, low)
-# 25 0
+# 10000 -16
+
+print('--------------------------')
+
+def hilo(List_of_nums):
+    high = float('-inf')    # minus infinity = inf
+    low = float("inf")      # infinity = inf
+    for index in range(0, len(List_of_nums)):
+        if List_of_nums[index] > high:
+            high = List_of_nums[index]
+        if List_of_nums[index] < low:
+            low = List_of_nums[index]
+    return high, low
+
+a = hilo([5, 3, 1, 2, 3, 5, 10, 15, 20, 25, 0, -16, 10000])
+print(a)    # storing both the variables into a sing variable will vreate a tuple
+# (10000, -16)

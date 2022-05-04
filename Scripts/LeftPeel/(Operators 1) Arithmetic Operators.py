@@ -29,3 +29,5 @@ print(int(30 / 3))
 print(10 % 3)       # This is called the modulus operator
 print(20 % 3)       # It gives you the r4emaining number that was not able to be divided
 print(30 % 3) 
+
+print(float( 1 / 2.0))
